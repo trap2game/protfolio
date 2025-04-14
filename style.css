@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10em;
+    gap: 25em;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    animation: MoveUpDown 1s linear infinite;
+  }
+.chose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -49rem;
+  }
+
+body {
+    background-color: rgb(6, 117, 110);
+}
+
+#sitingme{
+  height: 13rem;
+  width: 21rem;
+}
+#sitingpro{
+  height: 13rem;
+  width: 21rem;
+}
+
+#aboutme{
+    width: 15em;
+}
+#project{
+    width: 15em;
+}
+#aboutmemed{
+  width: 15em;
+  margin-top: -0.2rem;
+  margin-left: 12rem;
+  z-index:2;
+  display: none;
+}
+#projectmed{
+  width: 15em;
+  z-index:2;
+  margin-top: -11rem;
+  margin-left: 12rem;
+  display: none;
+}
+#pic{
+  height: 13rem;
+  width: 21rem;
+}
+#pic2{
+  height: 20rem;
+  width: 21rem;
+}
+#pic3{
+  height: 20rem;
+  width: 30rem;
+}
+#pic4{
+  height: 20rem;
+  width: 20rem;
+}
+#pic5{
+  width: 30em;
+  height: 20em;
+  z-index:2;
+  
+}
+#pic6{
+  width: 16em;
+  height: 15em;
+  z-index:2;
+  
+}
+#welcome{
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+.welcome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+
+}
+#chose{
+  margin-top: 10rem;
+  margin-left: 6rem;
+    z-index:-1;
+}
+#chosemed{
+  margin-left:-1rem;
+    z-index:-1;
+  display: none;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+button:hover {
+  filter: brightness(0.8);
+}
+button:active {
+  transform: scale(0.9);
+}
+dialog.modalme {
+  width: 80%;
+  max-width: 1000px;
+  background-color: #ffdd44;
+  padding: 34px;
+  border: 2px;
+  border-radius: 5px;
+  text-align: center;
+}
+dialog.modalpro {
+  width: 80%;
+  max-width: 1000px;
+  background-color: #fff59b;
+  padding: 34px;
+  border: 2px;
+  border-radius: 5px;
+  text-align: center;
+}
+dialog > p {
+  text-align: center;
+  margin: 0;
+}
+dialog > p:first-of-type {
+  margin: 0 auto 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+dialog > button {
+  margin: 20px auto;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @media (width < 1000px){
+    #chose{
+      display: none;
+    }
+    #chosemed{
+        display: block;
+    }
+    .chose{
+      display: block;
+      margin-top: -10rem;
+    }
+    .container {
+      display: none;
+    }
+  #aboutmemed{
+    display: block;
+  }
+  #projectmed{
+    display: block;
+  } 
+  #welcome{
+    width: 50rem;
+    height:10rem;
+    margin-top: -90px;
+    position: absolute;
+  }
+ }
